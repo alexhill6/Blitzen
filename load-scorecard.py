@@ -60,7 +60,7 @@ with psycopg2.connect(
 
 valid_unitid_set = set(valid_unitids.tolist())
 
-# 3. Filter to only rows whose unitid exists in IPEDS (Option C)
+# 3. Filter to only rows whose unitid exists in IPEDS
 institution_financial_df = institution_financial_df[institution_financial_df["UNITID"].isin(valid_unitid_set)].copy()
 institution_scorecard_info_df = institution_scorecard_info_df[institution_scorecard_info_df["UNITID"].isin(valid_unitid_set)].copy()
 institution_admissions_df = institution_admissions_df[institution_admissions_df["UNITID"].isin(valid_unitid_set)].copy()
@@ -101,7 +101,7 @@ def insert_dataframe_strict(df, table_name, host_name, db_name, user_name, pw):
             user=user_name,
             password=pw
         ) as conn:
-            conn.autocommit = False  # single explicit transaction
+            conn.autocommit = False
 
             with conn.cursor() as cur:
                 rows_inserted = 0
@@ -125,7 +125,7 @@ def insert_dataframe_strict(df, table_name, host_name, db_name, user_name, pw):
                         conn.rollback()
                         print("\nROLLBACK COMPLETE — no rows inserted.")
                         print(f"Attempted to insert {rows_inserted} of {total_rows} rows before failure.")
-                        return  # stop immediately
+                        return
 
                 conn.commit()
                 print("\nTRANSACTION COMMITTED.")
@@ -138,7 +138,7 @@ def insert_dataframe_strict(df, table_name, host_name, db_name, user_name, pw):
 
 insert_dataframe_strict(
     df=institution_financial_df,
-    table_name="institution_financial",  # or whatever your child table is called
+    table_name="institution_financial",
     host_name=host,
     db_name=dbname,
     user_name=username,
@@ -146,7 +146,7 @@ insert_dataframe_strict(
 )
 insert_dataframe_strict(
     df=institution_scorecard_info_df,
-    table_name="institution_scorecard_info",  # or whatever your child table is called
+    table_name="institution_scorecard_info",
     host_name=host,
     db_name=dbname,
     user_name=username,
@@ -154,7 +154,7 @@ insert_dataframe_strict(
 )
 insert_dataframe_strict(
     df=institution_admissions_df,
-    table_name="institution_admissions",  # or whatever your child table is called
+    table_name="institution_admissions",
     host_name=host,
     db_name=dbname,
     user_name=username,
@@ -162,7 +162,7 @@ insert_dataframe_strict(
 )
 insert_dataframe_strict(
     df=institution_completion_df,
-    table_name="institution_completion",  # or whatever your child table is called
+    table_name="institution_completion",
     host_name=host,
     db_name=dbname,
     user_name=username,
@@ -170,7 +170,7 @@ insert_dataframe_strict(
 )
 insert_dataframe_strict(
     df=institution_earnings_df,
-    table_name="institution_earnings",  # or whatever your child table is called
+    table_name="institution_earnings",
     host_name=host,
     db_name=dbname,
     user_name=username,
