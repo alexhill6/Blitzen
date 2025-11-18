@@ -21,7 +21,10 @@ part_one.ipynb and part_one.html are the Jupyter notebook and HTML files associa
 3. Summary of Instructions to Run Files
 
 i. Create, or update, the credentials_copy.py file to have the user's appropriate username and database password assigned to variables.
+
 ii. Run part_two.ipynb to connect to the database and run the CREATE TABLE SQL statements.
+
 iii. In the terminal, run 'python load-ipeds.py [filename]' to load in the IPEDS data and insert into the relevant SQL tables.
+
 iv. Finally, inn the terminal again, run 'python load-scorecard.py [filename]' to load in the College Scorecard data and insert into the relevant SQL tables.
 
