@@ -12,32 +12,58 @@ year = int(sys.argv[1][-14:-10]) + 1
 
 scorecard_df['YEAR'] = year
 
-institution_financial_df = scorecard_df[['UNITID', 'YEAR', 'TUITIONFEE_IN', 'TUITIONFEE_OUT', 'TUITIONFEE_PROG', 'TUITFTE', 'AVGFACSAL', 'CDR2', 'CDR3']]
-institution_scorecard_info_df = scorecard_df[['UNITID', 'YEAR', 'ACCREDAGENCY', 'PREDDEG', 'HIGHDEG', 'CONTROL', 'REGION']]
-institution_admissions_df = scorecard_df[['UNITID', 'YEAR', 'ADM_RATE', 'SATVR25', 'SATVR75', 'SATMT25', 'SATMT75', 'SATWR25', 'SATWR75',
-                                          'SATVRMID', 'SATMTMID', 'SATWRMID', 'ACTCM25', 'ACTCM75', 'ACTEN25', 'ACTEN75', 'ACTMT25', 
-                                          'ACTMT75', 'ACTWR25', 'ACTWR75', 'ACTCMMID', 'ACTENMID', 'ACTMTMID', 'ACTWRMID', 'SAT_AVG']]
-institution_completion_df = scorecard_df[['UNITID', 'YEAR', 'C150_4', 'C150_4_WHITE', 'C150_4_BLACK', 'C150_4_HISP', 'C150_4_ASIAN',
-                                          'C150_4_AIAN', 'C150_4_NHPI', 'C150_4_2MOR', 'C150_4_NRA', 'C150_4_UNKN']]
-institution_earnings_df = scorecard_df[['UNITID', 'YEAR', 'MN_EARN_WNE_INC1_P6', 'MN_EARN_WNE_INC2_P6', 'MN_EARN_WNE_INC3_P6', 'MN_EARN_WNE_INDEP0_INC1_P6',
-                                       'MN_EARN_WNE_INDEP0_P6', 'MN_EARN_WNE_INDEP1_P6', 'MN_EARN_WNE_MALE0_P6', 'MN_EARN_WNE_MALE1_P6']]
+institution_financial_df = scorecard_df[['UNITID', 'YEAR', 'TUITIONFEE_IN',
+                                         'TUITIONFEE_OUT', 'TUITIONFEE_PROG',
+                                         'TUITFTE', 'AVGFACSAL', 
+                                         'CDR2', 'CDR3']]
+institution_scorecard_info_df = scorecard_df[['UNITID', 'YEAR', 'ACCREDAGENCY',
+                                              'PREDDEG', 'HIGHDEG',
+                                              'CONTROL', 'REGION']]
+institution_admissions_df = scorecard_df[['UNITID', 'YEAR', 'ADM_RATE',
+                                          'SATVR25', 'SATVR75', 'SATMT25',
+                                          'SATMT75', 'SATVRMID', 'SATMTMID',
+                                          'ACTCM25', 'ACTCM75', 'ACTEN25',
+                                          'ACTEN75', 'ACTMT25', 'ACTMT75',
+                                          'ACTCMMID', 'ACTENMID', 
+                                          'ACTMTMID', 'SAT_AVG']]
+institution_completion_df = scorecard_df[['UNITID', 'YEAR', 'C150_4',
+                                          'C150_4_WHITE', 'C150_4_BLACK',
+                                          'C150_4_HISP', 'C150_4_ASIAN',
+                                          'C150_4_AIAN', 'C150_4_NHPI',
+                                          'C150_4_2MOR', 'C150_4_NRA',
+                                          'C150_4_UNKN']]
 
-institution_financial_df = institution_financial_df.where(pd.notna(institution_financial_df), None)
-institution_scorecard_info_df = institution_scorecard_info_df.where(pd.notna(institution_scorecard_info_df), None)
-institution_admissions_df = institution_admissions_df.where(pd.notna(institution_admissions_df), None)
-institution_completion_df = institution_completion_df.where(pd.notna(institution_completion_df), None)
-institution_earnings_df = institution_earnings_df.where(pd.notna(institution_earnings_df), None)
-institution_financial_df = institution_financial_df.replace({pd.NA: None, np.nan: None})
-institution_scorecard_info_df = institution_scorecard_info_df.replace({pd.NA: None, np.nan: None})
-institution_admissions_df = institution_admissions_df.replace({pd.NA: None, np.nan: None})
-institution_completion_df = institution_completion_df.replace({pd.NA: None, np.nan: None})
-institution_earnings_df = institution_earnings_df.replace({pd.NA: None, np.nan: None})
+institution_financial_df = institution_financial_df.where(
+    pd.notna(institution_financial_df), None
+    )
+institution_scorecard_info_df = institution_scorecard_info_df.where(
+    pd.notna(institution_scorecard_info_df), None
+    )
+institution_admissions_df = institution_admissions_df.where(
+    pd.notna(institution_admissions_df), None
+    )
+institution_completion_df = institution_completion_df.where(
+    pd.notna(institution_completion_df), None
+    )
+institution_financial_df = institution_financial_df.replace(
+    {pd.NA: None, np.nan: None}
+    )
+institution_scorecard_info_df = institution_scorecard_info_df.replace(
+    {pd.NA: None, np.nan: None}
+    )
+institution_admissions_df = institution_admissions_df.replace(
+    {pd.NA: None, np.nan: None}
+    )
+institution_completion_df = institution_completion_df.replace(
+    {pd.NA: None, np.nan: None}
+    )
 
 
-username = "elliehua"
-database = "elliehua"
+username = credentials_copy.DB_USER
+database = credentials_copy.DB_USER
 password = credentials_copy.DB_PASSWORD
-db_url = f"postgresql://" + username + ":" + password + "@debprodserver.postgres.database.azure.com:5432/" + database
+db_url = f"postgresql://" + username + ":" + password +
+"@debprodserver.postgres.database.azure.com:5432/" + database
 engine = create_engine(db_url)
 
 if "UNITID" not in scorecard_df.columns:
@@ -65,7 +91,6 @@ institution_financial_df = institution_financial_df[institution_financial_df["UN
 institution_scorecard_info_df = institution_scorecard_info_df[institution_scorecard_info_df["UNITID"].isin(valid_unitid_set)].copy()
 institution_admissions_df = institution_admissions_df[institution_admissions_df["UNITID"].isin(valid_unitid_set)].copy()
 institution_completion_df = institution_completion_df[institution_completion_df["UNITID"].isin(valid_unitid_set)].copy()
-institution_earnings_df = institution_earnings_df[institution_earnings_df["UNITID"].isin(valid_unitid_set)].copy()
 
 kept = len(institution_financial_df)
 total_read = len(institution_financial_df)
@@ -163,14 +188,6 @@ insert_dataframe_strict(
 insert_dataframe_strict(
     df=institution_completion_df,
     table_name="institution_completion",
-    host_name=host,
-    db_name=dbname,
-    user_name=username,
-    pw=password
-)
-insert_dataframe_strict(
-    df=institution_earnings_df,
-    table_name="institution_earnings",
     host_name=host,
     db_name=dbname,
     user_name=username,
