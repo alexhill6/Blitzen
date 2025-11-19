@@ -26,5 +26,5 @@ ii. Run part_two.ipynb to connect to the database and run the CREATE TABLE SQL s
 
 iii. In the terminal, run 'python load-ipeds.py [filename]' to load in the IPEDS data and insert into the relevant SQL tables.
 
-iv. Finally, inn the terminal again, run 'python load-scorecard.py [filename]' to load in the College Scorecard data and insert into the relevant SQL tables.
+iv. Finally, in the terminal again, run 'python load-scorecard.py [filename]' to load in the College Scorecard data and insert into the relevant SQL tables.
 
