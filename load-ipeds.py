@@ -16,7 +16,6 @@ institution_ipeds_info_df = institution_ipeds_info_df.replace({pd.NA: None, np.n
 
 from sqlalchemy import create_engine
 import importlib.util
-import credentials_copy
 username = "elliehua"
 database = "elliehua"
 password = credentials_copy.DB_PASSWORD
