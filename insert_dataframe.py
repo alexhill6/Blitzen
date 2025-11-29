@@ -34,9 +34,12 @@ def insert_dataframe(df, table_name, host_name, db_name, user_name, pw):
     col_names = ", ".join(columns)
     placeholders = ", ".join([f"%({c})s" for c in columns])
 
+    set_updates = ", ".join([f"{c} = EXCLUDED.{c}" for c in columns])
     insert_sql = f"""
         INSERT INTO {table_name} ({col_names})
-        VALUES ({placeholders});
+        VALUES ({placeholders})
+        ON CONFLICT (UNITID)
+        DO UPDATE SET {set_updates};
     """
 
     rows_to_insert = df.to_dict("records")
