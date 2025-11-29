@@ -25,13 +25,11 @@ institution_scorecard_info_df = scorecard_df[['UNITID', 'YEAR', 'ACCREDAGENCY',
                                               'CONTROL', 'REGION']]
 institution_admissions_df = scorecard_df[['UNITID', 'YEAR', 'ADM_RATE',
                                           'SATVR25', 'SATVR75', 'SATMT25',
-                                          'SATMT75', 'SATWR25', 'SATWR75',
-                                          'SATVRMID', 'SATMTMID', 'SATWRMID',
+                                          'SATMT75', 'SATVRMID', 'SATMTMID',
                                           'ACTCM25', 'ACTCM75', 'ACTEN25',
-                                          'ACTEN75', 'ACTMT25',
-                                          'ACTMT75', 'ACTWR25', 'ACTWR75',
-                                          'ACTCMMID', 'ACTENMID', 'ACTMTMID',
-                                          'ACTWRMID', 'SAT_AVG']]
+                                          'ACTEN75', 'ACTMT25', 'ACTMT75',
+                                          'ACTCMMID', 'ACTENMID', 
+                                          'ACTMTMID', 'SAT_AVG']]
 institution_completion_df = scorecard_df[['UNITID', 'YEAR', 'C150_4',
                                           'C150_4_WHITE', 'C150_4_BLACK',
                                           'C150_4_HISP', 'C150_4_ASIAN',
