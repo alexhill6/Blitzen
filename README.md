@@ -24,7 +24,7 @@ i. Create, or update, the credentials_copy.py file to have the user's appropriat
 
 ii. Run part_two.ipynb to connect to the database and run the CREATE TABLE SQL statements.
 
-iii. In the terminal, run 'python load-ipeds.py [filename]' to load in the IPEDS data and insert into the relevant SQL tables.
+iii. In the terminal, run 'python load-ipeds.py [filename]' to load in the IPEDS data and insert into the relevant SQL tables. These are the files that are called 'hd'.
 
-iv. Finally, in the terminal again, run 'python load-scorecard.py [filename]' to load in the College Scorecard data and insert into the relevant SQL tables.
+iv. Finally, in the terminal again, run 'python load-scorecard.py [filename]' to load in the College Scorecard data and insert into the relevant SQL tables. These are the files that are called 'merged'.
 
