@@ -1,0 +1,1 @@
+2025-11-29 09:32:44,156 - [ERROR] - Top-level connection error for table 'institution_ipeds_info': name 'psycopg2' is not defined
