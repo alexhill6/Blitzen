@@ -34,11 +34,18 @@ def insert_dataframe(df, table_name, host_name, db_name, user_name, pw):
     col_names = ", ".join(columns)
     placeholders = ", ".join([f"%({c})s" for c in columns])
 
+    if table_name == "institution_ipeds_info":
+        conflict_cols = ["UNITID"]
+    else:
+        conflict_cols = ["UNITID", "YEAR"]
+
+    conflict_clause = ", ".join(conflict_cols)
+
     set_updates = ", ".join([f"{c} = EXCLUDED.{c}" for c in columns])
     insert_sql = f"""
         INSERT INTO {table_name} ({col_names})
         VALUES ({placeholders})
-        ON CONFLICT (UNITID)
+        ON CONFLICT ({conflict_clause})
         DO UPDATE SET {set_updates};
     """
 

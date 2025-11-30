@@ -1,2 +1,2 @@
-DB_USER = "username/database here"
-DB_PASSWORD = "password here"
+DB_USER = "bfridman"
+DB_PASSWORD = "K7SLBJFE%I"

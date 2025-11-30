@@ -1,1 +1,581 @@
 2025-11-29 09:32:44,156 - [ERROR] - Top-level connection error for table 'institution_ipeds_info': name 'psycopg2' is not defined
+2025-11-29 18:22:26,617 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 0–500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(100654) already exists.
+
+2025-11-29 18:22:26,752 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=0, UNITID=100654, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(100654) already exists.
+
+2025-11-29 18:22:26,871 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 500–1000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(125028) already exists.
+
+2025-11-29 18:22:26,990 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=500, UNITID=125028, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(125028) already exists.
+
+2025-11-29 18:22:27,110 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1000–1500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(147703) already exists.
+
+2025-11-29 18:22:27,230 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1000, UNITID=147703, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(147703) already exists.
+
+2025-11-29 18:22:27,350 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1500–2000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(165945) already exists.
+
+2025-11-29 18:22:27,510 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1500, UNITID=165945, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(165945) already exists.
+
+2025-11-29 18:22:27,630 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2000–2500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(183859) already exists.
+
+2025-11-29 18:22:27,751 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2000, UNITID=183859, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(183859) already exists.
+
+2025-11-29 18:22:27,870 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2500–3000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(199908) already exists.
+
+2025-11-29 18:22:27,991 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2500, UNITID=199908, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(199908) already exists.
+
+2025-11-29 18:22:28,110 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3000–3500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(215628) already exists.
+
+2025-11-29 18:22:28,245 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3000, UNITID=215628, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(215628) already exists.
+
+2025-11-29 18:22:28,381 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3500–4000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(232025) already exists.
+
+2025-11-29 18:22:28,520 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3500, UNITID=232025, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(232025) already exists.
+
+2025-11-29 18:22:28,650 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4000–4500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(368407) already exists.
+
+2025-11-29 18:22:28,776 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4000, UNITID=368407, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(368407) already exists.
+
+2025-11-29 18:22:28,890 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4500–5000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(434441) already exists.
+
+2025-11-29 18:22:29,012 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4500, UNITID=434441, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(434441) already exists.
+
+2025-11-29 18:22:29,130 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5000–5500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(451121) already exists.
+
+2025-11-29 18:22:29,251 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5000, UNITID=451121, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(451121) already exists.
+
+2025-11-29 18:22:29,376 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5500–6000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(475282) already exists.
+
+2025-11-29 18:22:29,490 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5500, UNITID=475282, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(475282) already exists.
+
+2025-11-29 18:22:29,610 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 6000–6440. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(488253) already exists.
+
+2025-11-29 18:22:29,731 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=6000, UNITID=488253, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(488253) already exists.
+
+2025-11-29 18:23:22,200 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 0–500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(100654) already exists.
+
+2025-11-29 18:23:22,345 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=0, UNITID=100654, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(100654) already exists.
+
+2025-11-29 18:23:22,460 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 500–1000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(125028) already exists.
+
+2025-11-29 18:23:22,580 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=500, UNITID=125028, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(125028) already exists.
+
+2025-11-29 18:23:22,720 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1000–1500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(147703) already exists.
+
+2025-11-29 18:23:22,840 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1000, UNITID=147703, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(147703) already exists.
+
+2025-11-29 18:23:22,960 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1500–2000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(165945) already exists.
+
+2025-11-29 18:23:23,080 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1500, UNITID=165945, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(165945) already exists.
+
+2025-11-29 18:23:23,200 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2000–2500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(183859) already exists.
+
+2025-11-29 18:23:23,320 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2000, UNITID=183859, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(183859) already exists.
+
+2025-11-29 18:23:23,440 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2500–3000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(199908) already exists.
+
+2025-11-29 18:23:23,560 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2500, UNITID=199908, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(199908) already exists.
+
+2025-11-29 18:23:23,680 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3000–3500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(215628) already exists.
+
+2025-11-29 18:23:23,810 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3000, UNITID=215628, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(215628) already exists.
+
+2025-11-29 18:23:23,964 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3500–4000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(232025) already exists.
+
+2025-11-29 18:23:24,085 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3500, UNITID=232025, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(232025) already exists.
+
+2025-11-29 18:23:24,200 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4000–4500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(368407) already exists.
+
+2025-11-29 18:23:24,340 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4000, UNITID=368407, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(368407) already exists.
+
+2025-11-29 18:23:24,465 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4500–5000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(434441) already exists.
+
+2025-11-29 18:23:24,580 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4500, UNITID=434441, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(434441) already exists.
+
+2025-11-29 18:23:24,700 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5000–5500. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(451121) already exists.
+
+2025-11-29 18:23:24,825 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5000, UNITID=451121, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(451121) already exists.
+
+2025-11-29 18:23:24,959 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5500–6000. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(475282) already exists.
+
+2025-11-29 18:23:25,080 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5500, UNITID=475282, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(475282) already exists.
+
+2025-11-29 18:23:25,205 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 6000–6440. Error: duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(488253) already exists.
+
+2025-11-29 18:23:25,325 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=6000, UNITID=488253, Error=duplicate key value violates unique constraint "pk_ipeds"
+DETAIL:  Key (unitid)=(488253) already exists.
+
+2025-11-29 18:58:51,251 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 0–500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:51,389 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=0, UNITID=100654, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:51,507 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 500–1000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:51,627 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=500, UNITID=124292, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:51,767 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1000–1500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:51,908 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1000, UNITID=147396, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,047 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1500–2000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,167 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1500, UNITID=165112, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,287 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2000–2500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,407 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2000, UNITID=182722, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,527 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2500–3000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,647 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2500, UNITID=199139, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,767 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3000–3500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:52,888 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3000, UNITID=214290, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,007 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3500–4000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,127 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3500, UNITID=229814, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,247 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4000–4500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,387 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4000, UNITID=262369, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,508 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4500–5000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,627 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4500, UNITID=420723, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,747 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5000–5500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,867 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5000, UNITID=447917, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:53,987 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5500–6000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:54,107 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5500, UNITID=460394, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:54,227 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 6000–6500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:54,348 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=6000, UNITID=484729, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:54,468 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 6500–6559. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:58:54,587 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=6500, UNITID=494223, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:02,502 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 0–500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:02,621 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=0, UNITID=100654, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:02,742 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 500–1000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:02,859 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=500, UNITID=125028, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:02,980 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1000–1500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,100 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1000, UNITID=147703, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,220 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 1500–2000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,341 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=1500, UNITID=165945, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,460 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2000–2500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,584 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2000, UNITID=183859, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,700 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 2500–3000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,820 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=2500, UNITID=199908, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:03,940 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3000–3500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,060 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3000, UNITID=215628, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,180 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 3500–4000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,300 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=3500, UNITID=232025, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,420 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4000–4500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,540 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4000, UNITID=368407, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,663 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 4500–5000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,780 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=4500, UNITID=434441, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:04,900 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5000–5500. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:05,020 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5000, UNITID=451121, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:05,144 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 5500–6000. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:05,280 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=5500, UNITID=475282, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:05,402 - [ERROR] - Batch FAILED for table 'institution_ipeds_info': rows 6000–6440. Error: relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 18:59:05,520 - [ERROR] - Culprit row in table 'institution_ipeds_info': df_index=6000, UNITID=488253, Error=relation "institution_ipeds_info" does not exist
+LINE 2:         INSERT INTO institution_ipeds_info (UNITID, INSTNM, ...
+                            ^
+
+2025-11-29 19:34:18,026 - [ERROR] - Batch FAILED for table 'institution_financial': rows 0–500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,146 - [ERROR] - Culprit row in table 'institution_financial': df_index=0, UNITID=100654, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,246 - [ERROR] - Batch FAILED for table 'institution_financial': rows 500–1000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,366 - [ERROR] - Culprit row in table 'institution_financial': df_index=501, UNITID=126076, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,486 - [ERROR] - Batch FAILED for table 'institution_financial': rows 1000–1500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,606 - [ERROR] - Culprit row in table 'institution_financial': df_index=1003, UNITID=148584, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,706 - [ERROR] - Batch FAILED for table 'institution_financial': rows 1500–2000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,826 - [ERROR] - Culprit row in table 'institution_financial': df_index=1503, UNITID=166629, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:18,946 - [ERROR] - Batch FAILED for table 'institution_financial': rows 2000–2500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,066 - [ERROR] - Culprit row in table 'institution_financial': df_index=2003, UNITID=184056, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,187 - [ERROR] - Batch FAILED for table 'institution_financial': rows 2500–3000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,306 - [ERROR] - Culprit row in table 'institution_financial': df_index=2503, UNITID=199962, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,426 - [ERROR] - Batch FAILED for table 'institution_financial': rows 3000–3500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,546 - [ERROR] - Culprit row in table 'institution_financial': df_index=3003, UNITID=215336, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,671 - [ERROR] - Batch FAILED for table 'institution_financial': rows 3500–4000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,785 - [ERROR] - Culprit row in table 'institution_financial': df_index=3503, UNITID=231420, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:19,906 - [ERROR] - Batch FAILED for table 'institution_financial': rows 4000–4500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,026 - [ERROR] - Culprit row in table 'institution_financial': df_index=4003, UNITID=366623, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,146 - [ERROR] - Batch FAILED for table 'institution_financial': rows 4500–5000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,266 - [ERROR] - Culprit row in table 'institution_financial': df_index=4504, UNITID=431187, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,386 - [ERROR] - Batch FAILED for table 'institution_financial': rows 5000–5500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,506 - [ERROR] - Culprit row in table 'institution_financial': df_index=5004, UNITID=449807, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,626 - [ERROR] - Batch FAILED for table 'institution_financial': rows 5500–6000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,744 - [ERROR] - Culprit row in table 'institution_financial': df_index=5504, UNITID=461865, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,866 - [ERROR] - Batch FAILED for table 'institution_financial': rows 6000–6325. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:20,986 - [ERROR] - Culprit row in table 'institution_financial': df_index=6006, UNITID=486691, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,392 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 0–500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,509 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=0, UNITID=100654, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,626 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 500–1000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,746 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=501, UNITID=126076, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,866 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 1000–1500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:21,986 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=1003, UNITID=148584, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,106 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 1500–2000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,224 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=1503, UNITID=166629, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,344 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 2000–2500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,466 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=2003, UNITID=184056, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,586 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 2500–3000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,704 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=2503, UNITID=199962, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,823 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 3000–3500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:22,946 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=3003, UNITID=215336, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,063 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 3500–4000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,169 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=3503, UNITID=231420, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,286 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 4000–4500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,406 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=4003, UNITID=366623, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,524 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 4500–5000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,646 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=4504, UNITID=431187, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,765 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 5000–5500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:23,883 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=5004, UNITID=449807, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,004 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 5500–6000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,123 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=5504, UNITID=461865, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,249 - [ERROR] - Batch FAILED for table 'institution_scorecard_info': rows 6000–6325. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,364 - [ERROR] - Culprit row in table 'institution_scorecard_info': df_index=6006, UNITID=486691, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,804 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 0–500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:24,931 - [ERROR] - Culprit row in table 'institution_admissions': df_index=0, UNITID=100654, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,046 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 500–1000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,164 - [ERROR] - Culprit row in table 'institution_admissions': df_index=501, UNITID=126076, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,284 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 1000–1500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,403 - [ERROR] - Culprit row in table 'institution_admissions': df_index=1003, UNITID=148584, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,506 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 1500–2000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,604 - [ERROR] - Culprit row in table 'institution_admissions': df_index=1503, UNITID=166629, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,724 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 2000–2500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,846 - [ERROR] - Culprit row in table 'institution_admissions': df_index=2003, UNITID=184056, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:25,966 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 2500–3000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,086 - [ERROR] - Culprit row in table 'institution_admissions': df_index=2503, UNITID=199962, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,204 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 3000–3500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,323 - [ERROR] - Culprit row in table 'institution_admissions': df_index=3003, UNITID=215336, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,445 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 3500–4000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,564 - [ERROR] - Culprit row in table 'institution_admissions': df_index=3503, UNITID=231420, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,684 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 4000–4500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,806 - [ERROR] - Culprit row in table 'institution_admissions': df_index=4003, UNITID=366623, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:26,906 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 4500–5000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,023 - [ERROR] - Culprit row in table 'institution_admissions': df_index=4504, UNITID=431187, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,148 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 5000–5500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,266 - [ERROR] - Culprit row in table 'institution_admissions': df_index=5004, UNITID=449807, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,391 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 5500–6000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,504 - [ERROR] - Culprit row in table 'institution_admissions': df_index=5504, UNITID=461865, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,613 - [ERROR] - Batch FAILED for table 'institution_admissions': rows 6000–6325. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:27,724 - [ERROR] - Culprit row in table 'institution_admissions': df_index=6006, UNITID=486691, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,186 - [ERROR] - Batch FAILED for table 'institution_completion': rows 0–500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,311 - [ERROR] - Culprit row in table 'institution_completion': df_index=0, UNITID=100654, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,423 - [ERROR] - Batch FAILED for table 'institution_completion': rows 500–1000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,544 - [ERROR] - Culprit row in table 'institution_completion': df_index=501, UNITID=126076, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,666 - [ERROR] - Batch FAILED for table 'institution_completion': rows 1000–1500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,784 - [ERROR] - Culprit row in table 'institution_completion': df_index=1003, UNITID=148584, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:28,904 - [ERROR] - Batch FAILED for table 'institution_completion': rows 1500–2000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,023 - [ERROR] - Culprit row in table 'institution_completion': df_index=1503, UNITID=166629, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,145 - [ERROR] - Batch FAILED for table 'institution_completion': rows 2000–2500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,263 - [ERROR] - Culprit row in table 'institution_completion': df_index=2003, UNITID=184056, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,384 - [ERROR] - Batch FAILED for table 'institution_completion': rows 2500–3000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,504 - [ERROR] - Culprit row in table 'institution_completion': df_index=2503, UNITID=199962, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,624 - [ERROR] - Batch FAILED for table 'institution_completion': rows 3000–3500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,744 - [ERROR] - Culprit row in table 'institution_completion': df_index=3003, UNITID=215336, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,864 - [ERROR] - Batch FAILED for table 'institution_completion': rows 3500–4000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:29,983 - [ERROR] - Culprit row in table 'institution_completion': df_index=3503, UNITID=231420, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,108 - [ERROR] - Batch FAILED for table 'institution_completion': rows 4000–4500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,224 - [ERROR] - Culprit row in table 'institution_completion': df_index=4003, UNITID=366623, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,344 - [ERROR] - Batch FAILED for table 'institution_completion': rows 4500–5000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,464 - [ERROR] - Culprit row in table 'institution_completion': df_index=4504, UNITID=431187, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,583 - [ERROR] - Batch FAILED for table 'institution_completion': rows 5000–5500. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,704 - [ERROR] - Culprit row in table 'institution_completion': df_index=5004, UNITID=449807, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,824 - [ERROR] - Batch FAILED for table 'institution_completion': rows 5500–6000. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:30,944 - [ERROR] - Culprit row in table 'institution_completion': df_index=5504, UNITID=461865, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:31,063 - [ERROR] - Batch FAILED for table 'institution_completion': rows 6000–6325. Error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-11-29 19:34:31,189 - [ERROR] - Culprit row in table 'institution_completion': df_index=6006, UNITID=486691, Error=there is no unique or exclusion constraint matching the ON CONFLICT specification
+
