@@ -14,6 +14,16 @@ ipeds_df['YEAR'] = int(file_name[-8:-4])
 institution_ipeds_info_df = ipeds_df[['UNITID', 'INSTNM', 'ADDR','CITY','STABBR','ZIP','FIPS',
                                       'COUNTYCD','COUNTYNM','CBSA','CBSATYPE','CSA','LATITUDE','LONGITUD',
                                       'CCBASIC', 'YEAR']]
+
+if "CCBASIC" in institution_ipeds_info_df.columns:
+    institution_ipeds_info_df["CCBASIC"] = pd.to_numeric(
+        institution_ipeds_info_df["CCBASIC"], errors="coerce"
+    )
+
+    institution_ipeds_info_df["CCBASIC"] = institution_ipeds_info_df["CCBASIC"].apply(
+        lambda x: None if pd.isna(x) or x < 0 or x > 33 else int(x)
+    )
+
 institution_ipeds_info_df = institution_ipeds_info_df.replace({pd.NA: None, np.nan: None})
 
 username = credentials_copy.DB_USER
