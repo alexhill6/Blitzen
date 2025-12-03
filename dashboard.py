@@ -28,7 +28,8 @@ df1 = df1.dropna()
 
 # Requirement 2
 
-# SQL query for Average In-State and Average Out-of-State tutition by Carnegie Classification Score and State
+# SQL query for Average In-State and Average Out-of-State
+# tuition by Carnegie Classification Score and State
 query2 = "SELECT a.CCBASIC, a.STABBR as State, ROUND(AVG(b.TUITIONFEE_IN), 2) AS tin, ROUND(AVG(b.TUITIONFEE_OUT), 2) AS tout, b.YEAR FROM institution_ipeds_info as a JOIN institution_financial as b ON a.UNITID = b.UNITID GROUP BY CCBASIC, STABBR, b.YEAR ORDER BY STABBR, CCBASIC"
 # put results in pandas dataframe
 df2 = pd.read_sql(query2, conn)
