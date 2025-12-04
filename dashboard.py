@@ -40,19 +40,27 @@ df2.columns = ['Carnegie Classification', 'State Abbreviation', "Average In-Stat
 # remove null values
 df2 = df2.dropna()
 
+# create title for dashboard
+st.title("IPEDS and College Scorecard Institution Data")
+
+# create year selectbox infrastructure
+all_years = sorted(df2["Year"].unique())
+selected_year = st.selectbox("Select Year to Display in Tables", all_years)
+selected_year = int(selected_year)
+
 # Requirement 3
 
 # SQL query for best insitutions by 3 Year Loan Repayment Rate (after updating columns later)
-query3_1 = "SELECT a.instnm as Institution, b.CDR3 as CDR3, b.YEAR FROM institution_ipeds_info as a JOIN institution_financial as b ON a.UNITID = b.UNITID WHERE b.CDR3 IS NOT NULL ORDER BY b.CDR3 ASC LIMIT 10"
+query3_1 = "SELECT a.instnm, b.CDR3, b.YEAR FROM institution_financial AS b JOIN institution_ipeds_info AS a ON a.UNITID = b.UNITID WHERE b.CDR3 IS NOT NULL AND a.instnm IS NOT NULL AND b.YEAR = %s ORDER BY b.CDR3 ASC LIMIT 10"
 
 # put results in pandas dataframe
-df3_1 = pd.read_sql(query3_1, conn)
+df3_1 = pd.read_sql(query3_1, conn, params=[selected_year])
 
-# SQL query for worst insitutions by 3 Year Loan Repayment Rate (after updating columns later)
-query3_2 = "SELECT a.instnm as Institution, b.CDR3 as CDR3, b.YEAR FROM institution_ipeds_info as a JOIN institution_financial as b ON a.UNITID = b.UNITID WHERE b.CDR3 IS NOT NULL ORDER BY b.CDR3 DESC LIMIT 10"
+# SQL query for Worst insitutions by 3 Year Loan Repayment Rate (after updating columns later)
+query3_2 = "SELECT a.instnm, b.CDR3, b.YEAR FROM institution_financial AS b JOIN institution_ipeds_info AS a ON a.UNITID = b.UNITID WHERE b.CDR3 IS NOT NULL AND a.instnm IS NOT NULL AND b.YEAR = %s ORDER BY b.CDR3 DESC LIMIT 10"
 
 # put results in pandas dataframe
-df3_2 = pd.read_sql(query3_2, conn)
+df3_2 = pd.read_sql(query3_2, conn, params=[selected_year])
 
 # calculate repayment rate as 1 - default rate
 df3_1['cdr3'] = 1 - df3_1['cdr3']
@@ -83,13 +91,6 @@ df4.columns = ['Carnegie Classification', 'Year', 'Average 3 Year Loan Repayment
 # drop dataframe index
 df4 = df4.reset_index(drop=True)
 
-# create title for dashboard
-st.title("IPEDS and College Scorecard Institution Data")
-
-# create year selectbox infrastructure
-all_years = sorted(df2["Year"].unique())
-selected_year = st.selectbox("Select Year to Display in Tables", all_years)
-
 # create header and text for requirement 1
 st.header(f"Institutions Present in {selected_year}")
 st.markdown(f"The following institutions were active in {selected_year}:")
@@ -107,7 +108,7 @@ df2_filtered = df2[df2["Year"] == selected_year].drop(columns=["Year"])
 st.dataframe(df2_filtered, hide_index=True)
 
 # create header and first text for requirement 3
-st.header("Loan Repayment")
+st.header(f"Loan Repayment in {selected_year}")
 st.markdown(f"The following institutions had the best 3 Year loan repayment rates in {selected_year}:")
 
 # remove year from first dataframe and drop index and show dataframe
@@ -226,8 +227,8 @@ chart4 = (
 chart_placeholder.altair_chart(chart4, use_container_width=True)
 
 # create header and text for additional analysis 1
-st.header("Degree Completion Rate")
-st.markdown("The following table shows how Completion Rate varies across demographics and states")
+st.header(f"Degree Completion Rate in {selected_year}")
+st.markdown(f"The following table shows how Completion Rate varies across demographics and states in {selected_year}:")
 
 # SQL Query to get completion rates across different demographics by state and year
 query5 = "SELECT b.STABBR as State, ROUND(AVG(a.C150_4)::numeric, 2) as Overall_Completion_Rate, ROUND(AVG(a.C150_4_WHITE)::numeric, 2) as Completion_Rate_White, ROUND(AVG(a.C150_4_BLACK)::numeric, 2) as Completion_Rate_Black, ROUND(AVG(a.C150_4_HISP)::numeric, 2) as Completion_Rate_Hispanic, ROUND(AVG(a.C150_4_ASIAN)::numeric, 2) as Completion_Rate_Asian, ROUND(AVG(a.C150_4_AIAN)::numeric, 2) as Completion_Rate_American_Indian_Alaska_Native, ROUND(AVG(a.C150_4_NHPI)::numeric, 2) as Completion_Rate_Native_Hawaiian_Pacific_Islander, ROUND(AVG(a.C150_4_2MOR)::numeric, 2) as Completion_Rate_Two_or_More_Races, ROUND(AVG(a.C150_4_NRA)::numeric, 2) as Completion_Rate_Nonresident_Alien, ROUND(AVG(a.C150_4_UNKN)::numeric, 2) as Completion_Rate_Unknown, a.YEAR as Year FROM institution_completion as a JOIN institution_ipeds_info as b ON a.UNITID = b.UNITID GROUP BY b.STABBR, a.YEAR ORDER BY a.YEAR, b.STABBR"
